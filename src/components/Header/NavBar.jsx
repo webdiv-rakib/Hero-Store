@@ -24,7 +24,6 @@ const NavBar = () => {
                 </div>
                 <div className="flex justify-center items-center gap-2">
                     <img className="w-10" src={herologo} alt="Hero IO" />
-                    {/* 2. Applied Gradient Text Here */}
                     <a className="text-xl md:text-3xl font-extrabold bg-gradient-to-r from-[#6b35e5] to-purple-400 bg-clip-text text-transparent cursor-pointer">
                         Hero IO
                     </a>
@@ -32,7 +31,6 @@ const NavBar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 flex gap-10 font-medium text-lg">
-                    {/* Added 'to' props and applied the dynamic styles */}
                     <NavLink to="/" className={navLinkStyles}>Home</NavLink>
                     <NavLink to="/apps" className={navLinkStyles}>Apps</NavLink>
                     <NavLink to="/installation" className={navLinkStyles}>Installation</NavLink>
