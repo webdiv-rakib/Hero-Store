@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "title": "CodeCraft Mobile",
+    "companyName": "DevStudio Pro",
+    "image": "https://picsum.photos/seed/app1/200/200",
+    "description": "A powerful lightweight code editor for writing and compiling code directly on your mobile device. Supports React, Next.js, and more.",
+    "size": 45.2,
+    "reviews": 12450,
+    "ratingAvg": 4.8,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 9000 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "ZenFocus Pomodoro",
+    "companyName": "Mindful Apps",
+    "image": "https://picsum.photos/seed/app2/200/200",
+    "description": "Boost your productivity and manage your time effectively with this customizable Pomodoro timer featuring ambient background sounds.",
+    "size": 18.5,
+    "reviews": 8300,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "PixelForge Design",
+    "companyName": "Creative Labs UI",
+    "image": "https://picsum.photos/seed/app3/200/200",
+    "description": "Create stunning UI/UX wireframes on the go. Export directly to Figma or standard CSS/Tailwind formats.",
+    "size": 88.0,
+    "reviews": 2100,
+    "ratingAvg": 3.9,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "DataDash Analytics",
+    "companyName": "Metrics Co.",
+    "image": "https://picsum.photos/seed/app4/200/200",
+    "description": "Connect your web apps and monitor real-time server traffic, error logs, and user engagement metrics from a unified dashboard.",
+    "size": 32.1,
+    "reviews": 5400,
+    "ratingAvg": 4.2,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "CryptoTrack Pro",
+    "companyName": "BlockFinance",
+    "image": "https://picsum.photos/seed/app5/200/200",
+    "description": "Track your cryptocurrency portfolio, set custom alerts, and analyze market trends with real-time API integrations.",
+    "size": 55.4,
+    "reviews": 18500,
+    "ratingAvg": 4.6,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 12000 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "NutriScan Scanner",
+    "companyName": "HealthTech Inc.",
+    "image": "https://picsum.photos/seed/app6/200/200",
+    "description": "Scan food barcodes to instantly view nutritional information, macro breakdowns, and health scoring based on your diet plan.",
+    "size": 41.8,
+    "reviews": 6700,
+    "ratingAvg": 4.3,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "TaskHero Teams",
+    "companyName": "AgileSoft",
+    "image": "https://picsum.photos/seed/app7/200/200",
+    "description": "The ultimate project management tool for remote development teams. Includes Kanban boards, sprint tracking, and issue logging.",
+    "size": 64.2,
+    "reviews": 14200,
+    "ratingAvg": 4.7,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 9000 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "SoundWave Studio",
+    "companyName": "AudioPhile Apps",
+    "image": "https://picsum.photos/seed/app8/200/200",
+    "description": "A pocket-sized digital audio workstation. Record, mix, and master audio tracks with built-in synthesizers and effects.",
+    "size": 112.5,
+    "reviews": 9800,
+    "ratingAvg": 4.4,
+    "downloads": 920000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "FitJourney Tracker",
+    "companyName": "ActiveLife",
+    "image": "https://picsum.photos/seed/app9/200/200",
+    "description": "Log your workouts, track your daily steps, and connect with wearable devices to monitor your overall physical health.",
+    "size": 38.9,
+    "reviews": 22400,
+    "ratingAvg": 4.9,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 18000 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "TravelMate Guide",
+    "companyName": "GlobeTrekker",
+    "image": "https://picsum.photos/seed/app10/200/200",
+    "description": "Your ultimate travel companion. Discover hidden gems, book local experiences, and download offline maps for your next adventure.",
+    "size": 76.3,
+    "reviews": 4500,
+    "ratingAvg": 4.1,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "SecureVault Passwords",
+    "companyName": "CyberSafe Solutions",
+    "image": "https://picsum.photos/seed/app11/200/200",
+    "description": "Store all your passwords, API keys, and secure notes in one highly encrypted local vault. Biometric login supported.",
+    "size": 22.1,
+    "reviews": 11200,
+    "ratingAvg": 4.8,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 8500 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Leaf Lens AI",
+    "companyName": "AgriTech Vision",
+    "image": "https://picsum.photos/seed/app12/200/200",
+    "description": "Utilize advanced deep learning models to scan plant leaves and instantly identify diseases, pests, and nutrient deficiencies.",
+    "size": 58.4,
+    "reviews": 3100,
+    "ratingAvg": 4.5,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "BudgetBoss Planner",
+    "companyName": "FinSmart",
+    "image": "https://picsum.photos/seed/app13/200/200",
+    "description": "Take control of your finances. Connect your bank accounts, categorize spending, and set savings goals automatically.",
+    "size": 29.5,
+    "reviews": 8900,
+    "ratingAvg": 4.6,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "LingoLearn Languages",
+    "companyName": "Polyglot Inc.",
+    "image": "https://picsum.photos/seed/app14/200/200",
+    "description": "Master a new language with bite-sized, game-like lessons. Practice speaking, reading, and listening every day.",
+    "size": 95.2,
+    "reviews": 45000,
+    "ratingAvg": 4.9,
+    "downloads": 8500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 35000 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "SkyCast Radar",
+    "companyName": "MeteorLogic",
+    "image": "https://picsum.photos/seed/app15/200/200",
+    "description": "Get hyper-local weather forecasts, real-time radar maps, and severe weather alerts directly to your home screen.",
+    "size": 42.0,
+    "reviews": 15600,
+    "ratingAvg": 4.4,
+    "downloads": 3200000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 8000 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Chef's Plate Recipes",
+    "companyName": "Culinary Connect",
+    "image": "https://picsum.photos/seed/app16/200/200",
+    "description": "Discover thousands of recipes, create meal plans, and generate automatic grocery lists based on your dietary preferences.",
+    "size": 51.7,
+    "reviews": 7200,
+    "ratingAvg": 4.7,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "SnapEdit Pro",
+    "companyName": "Visionary Media",
+    "image": "https://picsum.photos/seed/app17/200/200",
+    "description": "Professional photo editing made easy. Apply AI-powered filters, remove backgrounds, and adjust lighting with a single tap.",
+    "size": 134.8,
+    "reviews": 28000,
+    "ratingAvg": 4.5,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 16000 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "PodStream Player",
+    "companyName": "AudioHub",
+    "image": "https://picsum.photos/seed/app18/200/200",
+    "description": "Subscribe to your favorite podcasts, discover new shows, and enjoy seamless offline playback with smart volume leveling.",
+    "size": 36.4,
+    "reviews": 6100,
+    "ratingAvg": 4.3,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2500 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "JotPad Notes",
+    "companyName": "Productivity Plus",
+    "image": "https://picsum.photos/seed/app19/200/200",
+    "description": "A minimalist note-taking app. Organize with tags, sync across devices, and collaborate in real-time with friends or colleagues.",
+    "size": 15.2,
+    "reviews": 10500,
+    "ratingAvg": 4.8,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "HabitForge",
+    "companyName": "LifeHack Tools",
+    "image": "https://picsum.photos/seed/app20/200/200",
+    "description": "Build good habits and break bad ones. Visual streaks and daily reminders keep you motivated to achieve your personal goals.",
+    "size": 24.9,
+    "reviews": 4800,
+    "ratingAvg": 4.6,
+    "downloads": 680000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "SleepCycle Monitor",
+    "companyName": "RestWell",
+    "image": "https://picsum.photos/seed/app21/200/200",
+    "description": "Track your sleep patterns using sound analysis. Wake up feeling refreshed during your lightest sleep phase with the smart alarm.",
+    "size": 62.1,
+    "reviews": 19200,
+    "ratingAvg": 4.4,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 11000 }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Aura Meditation",
+    "companyName": "Mindful Apps",
+    "image": "https://picsum.photos/seed/app22/200/200",
+    "description": "Reduce stress and find inner peace with guided meditation sessions, breathing exercises, and soothing nature soundscapes.",
+    "size": 85.0,
+    "reviews": 11400,
+    "ratingAvg": 4.9,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 9000 }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "MeasureAR",
+    "companyName": "SpaceTech",
+    "image": "https://picsum.photos/seed/app23/200/200",
+    "description": "Turn your phone into a virtual tape measure. Use augmented reality to calculate distances, areas, and object dimensions instantly.",
+    "size": 105.4,
+    "reviews": 3200,
+    "ratingAvg": 3.8,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "StockTicker Live",
+    "companyName": "MarketInsights",
+    "image": "https://picsum.photos/seed/app24/200/200",
+    "description": "Stay ahead of the market with real-time stock quotes, interactive charts, and breaking financial news alerts.",
+    "size": 31.8,
+    "reviews": 7500,
+    "ratingAvg": 4.2,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "KeyGen Automator",
+    "companyName": "CyberSafe Solutions",
+    "image": "https://picsum.photos/seed/app25/200/200",
+    "description": "Generate highly secure, randomized passwords and 2FA tokens instantly. Includes a built-in password strength analyzer.",
+    "size": 12.3,
+    "reviews": 2400,
+    "ratingAvg": 4.7,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  }
+]
