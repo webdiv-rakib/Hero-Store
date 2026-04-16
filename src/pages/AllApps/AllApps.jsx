@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router';
 import AppsLists from '../AppsLists/AppsLists';
 
 const AllApps = () => {
     const appData = useLoaderData();
+    const [searchTerm, setSearchTerm] = useState("");
+
+    // 3. Filter the apps based on the search term (case-insensitive)
+    const filteredApps = appData.filter(app =>
+        app.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
     return (
         <div>
             <div className='text-center md:pt-20'>
@@ -12,10 +18,11 @@ const AllApps = () => {
             </div>
             <div className='flex items-center justify-between md:px-20'>
                 <div className='text-2xl font-bold'>
-                    <h1>({appData.length})Apps Found</h1>
+                    {/* Update the count to reflect filtered results */}
+                    <h1>({filteredApps.length}) Apps Found</h1>
                 </div>
                 <div>
-                    <label className="input">
+                    <label className="input outline-none border-gray-300">
                         <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <g
                                 strokeLinejoin="round"
@@ -28,15 +35,28 @@ const AllApps = () => {
                                 <path d="m21 21-4.3-4.3"></path>
                             </g>
                         </svg>
-                        <input type="search" required placeholder="Search" />
+                        <input
+                            type="search"
+                            placeholder="Search by title..."
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                        />
                     </label>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-5 justify-self-center items-center gap-5 ms:gap-x-10  md:pb-10 md:pt-10 pt-5 pb-5">
-                {
-                    appData.map(app => <AppsLists key={app.id} app={app}></AppsLists>)
-                }
-            </div>
+            {/* 5. Conditional Rendering: Show grid OR "Not Found" message */}
+            {filteredApps.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center items-center gap-5 md:pb-10 md:pt-10 pt-5 pb-5 px-5 md:px-20">
+                    {
+                        filteredApps.map(app => <AppsLists key={app.id} app={app}></AppsLists>)
+                    }
+                </div>
+            ) : (
+                <div className="flex flex-col items-center justify-center mt-20 space-y-4 md:pb-10">
+                    <h2 className="text-3xl font-bold text-gray-400">No App Found</h2>
+                    <p className="text-gray-500">Try searching for a different keyword.</p>
+                </div>
+            )}
         </div>
     );
 };
