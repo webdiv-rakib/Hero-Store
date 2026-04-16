@@ -10,7 +10,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Information></Information>
-            <AppsStore></AppsStore>
+            <AppsStore appData={appData}></AppsStore>
         </div>
     );
 };
