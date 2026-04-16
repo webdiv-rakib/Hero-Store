@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import AppsLists from "../AppsLists/AppsLists";
 
 const AppsStore = ({ appData }) => {
@@ -20,7 +21,9 @@ const AppsStore = ({ appData }) => {
                 }
             </div>
             <div className="text-center md:pb-10 pb-5">
-                <button className="btn text-white bg-gradient-to-r from-[#6b35e5] to-purple-400">Show All</button>
+                <Link to="/apps">
+                    <button className="btn text-white bg-gradient-to-r from-[#6b35e5] to-purple-400">Show All</button>
+                </Link>
             </div>
         </div>
     );
