@@ -57,6 +57,7 @@ const AllApps = () => {
                     <p className="text-gray-500">Try searching for a different keyword.</p>
                 </div>
                 // tooo lazy to anything today.
+                // will start tomorrow.
             )}
         </div>
     );
