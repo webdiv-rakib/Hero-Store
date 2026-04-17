@@ -56,6 +56,7 @@ const AllApps = () => {
                     <h2 className="text-3xl font-bold text-gray-400">No App Found</h2>
                     <p className="text-gray-500">Try searching for a different keyword.</p>
                 </div>
+                // tooo lazy to anything today.
             )}
         </div>
     );
