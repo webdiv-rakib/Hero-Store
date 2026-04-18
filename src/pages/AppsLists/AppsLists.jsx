@@ -11,7 +11,7 @@ const AppsLists = ({ app }) => {
     };
 
     return (
-        <Link>
+        <Link to={`/appDetails/${app.id}`}>
             <div className='rounded-xl md:w-max bg-gray-200 shadow-xl w-100'>
                 <div className='p-5 '>
                     <div className="flex flex-col justify-center items-center">
