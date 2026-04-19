@@ -25,7 +25,7 @@ const NavBar = () => {
                 <NavLink to="/" className="flex justify-center items-center gap-2">
                     <img className="w-10" src={herologo} alt="Hero IO" />
                     <a className="text-xl md:text-3xl font-extrabold bg-gradient-to-r from-[#6b35e5] to-purple-400 bg-clip-text text-transparent cursor-pointer">
-                        Hero IO
+                        Hero Store
                     </a>
                 </NavLink>
             </div>
