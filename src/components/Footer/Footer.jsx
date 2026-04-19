@@ -5,9 +5,9 @@ const Footer = () => {
             <aside>
                 <img className="w-20" src={footerlogo} alt="" />
                 <p className="font-bold">
-                    ACME Industries Ltd.
+                    Hero Store
                     <br />
-                    Providing reliable tech since 1992
+                    We Build Productive Apps
                 </p>
                 <p>Copyright © {new Date().getFullYear()} - All right reserved by webdiv-rakib</p>
             </aside>
