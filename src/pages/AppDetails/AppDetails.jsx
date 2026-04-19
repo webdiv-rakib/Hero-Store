@@ -1,6 +1,7 @@
 import { useLoaderData, useNavigate, useParams } from "react-router";
 import ReviewChart from "../../components/ReviewChart/ReviewChart";
 import { useEffect, useState } from "react";
+import { toast } from 'react-toastify';
 
 const AppDetails = () => {
     const { id } = useParams();
@@ -23,7 +24,7 @@ const AppDetails = () => {
             storedIds.push(appId);
             localStorage.setItem('installedApps', JSON.stringify(storedIds));
             setIsInstalled(true);
-            alert("App installed successfully!"); // Replace with Toast success
+            toast.success(`${title} installed successfully!`);
         }
     };
 

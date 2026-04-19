@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLoaderData } from 'react-router';
-// import toast from 'react-hot-toast'; // Uncomment if using react-hot-toast
+import { toast } from 'react-toastify';
 
 const Installation = () => {
     const appData = useLoaderData();
@@ -29,7 +29,7 @@ const Installation = () => {
         localStorage.setItem('installedApps', JSON.stringify(updatedIds));
 
         // Trigger Toast (Replace alert with your Toast library)
-        alert("App uninstalled successfully!");
+        toast.info("App uninstalled successfully.");
         // toast.success("App uninstalled successfully!");
     };
 
