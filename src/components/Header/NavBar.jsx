@@ -37,7 +37,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end md:flex md:gap-2">
-                <a className="btn bg-green-400 text-white bg-linear-to-r from-[#6b35e5] to-purple-500" href="https://github.com/webdiv-rakib" target="_blank"><FaGithub />Sign In</a>
+                <a className="btn bg-green-400 text-white bg-linear-to-r from-[#6b35e5] to-purple-500" href="https://github.com/webdiv-rakib" target="_blank"><FaGithub />Contribute</a>
             </div>
         </div>
     );
