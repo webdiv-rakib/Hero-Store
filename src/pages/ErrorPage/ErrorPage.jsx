@@ -7,7 +7,7 @@ const ErrorPage = () => {
     }
     return (
         <div className="flex flex-col justify-center items-center space-y-10 mb-10 pt-10">
-            <div>
+            <div className="px-5">
                 <img src={errorimage} alt="" />
             </div>
             <div className="text-center space-y-3">

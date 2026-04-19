@@ -64,7 +64,7 @@ const Installation = () => {
 
             {/* Sort Dropdown */}
             {installedApps.length > 0 && (
-                <div className="flex justify-end mt-10 mb-5">
+                <div className="flex md:justify-end mt-10 mb-5 justify-center">
                     <select
                         className="select select-bordered w-full max-w-xs focus:outline-none"
                         value={sortOrder}
@@ -81,10 +81,10 @@ const Installation = () => {
             {installedApps.length > 0 ? (
                 <div className="mt-5 flex flex-col gap-5">
                     {installedApps.map(app => (
-                        <div key={app.id} className="bg-base-100 shadow-xl border border-gray-100 flex justify-between items-center gap-10 p-5 rounded-xl">
-                            <div className='flex gap-5'>
-                                <img className='rounded-xl h-20' src={app.image} alt="" />
-                                <div>
+                        <div key={app.id} className="bg-base-100 shadow-xl border border-gray-100 flex justify-between items-center gap-10 md:p-5 rounded-xl p-2">
+                            <div className='flex md:gap-5'>
+                                <img className='rounded-xl h-20 hidden md:block' src={app.image} alt="" />
+                                <div className='flex md:flex-col flex-row justify-center items-center md:justify-start md:items-start'>
                                     <div className='mt-3'>
                                         <h2 className="card-title text-lg">{app.title}</h2>
                                     </div>

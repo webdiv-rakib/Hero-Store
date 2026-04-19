@@ -52,15 +52,15 @@ const AppDetails = () => {
                     </div>
                     <hr className="mt-5" />
                     <div className="flex items-center justify-center gap-20 mt-5 text-center">
-                        <div>
+                        <div className="space-y-2">
                             <img className="w-10" src="https://img.icons8.com/?size=100&id=21339&format=png&color=000000" alt="" />
                             <p className="text-3xl font-extrabold">{formatDownloads(downloads)}</p>
                         </div>
-                        <div>
+                        <div className="space-y-2">
                             <img className="w-10" src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000" alt="" />
                             <p className="text-3xl font-extrabold">{ratingAvg}</p>
                         </div>
-                        <div>
+                        <div className="space-y-2">
                             <img className="w-10" src="https://img.icons8.com/?size=100&id=13823&format=png&color=000000" alt="" />
                             <p className="text-3xl font-extrabold">{formatDownloads(reviews)}</p>
                         </div>
