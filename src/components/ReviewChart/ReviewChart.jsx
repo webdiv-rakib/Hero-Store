@@ -9,11 +9,8 @@ import {
 } from 'recharts';
 
 const ReviewChart = ({ ratings }) => {
-    // 1. Recharts renders bottom-to-top by default. 
-    // We reverse the array so "5 star" appears at the top of the chart!
     const chartData = [...ratings].reverse();
 
-    // Custom Tooltip to make it look clean with Tailwind
     const CustomTooltip = ({ active, payload }) => {
         if (active && payload && payload.length) {
             return (
@@ -30,18 +27,14 @@ const ReviewChart = ({ ratings }) => {
 
     return (
         <div className="w-full h-72 bg-base-200 p-5 rounded-2xl">
-            {/* ResponsiveContainer ensures it looks good on mobile and desktop */}
             <ResponsiveContainer width="100%" height="100%">
-                {/* layout="vertical" turns it into a horizontal bar chart */}
                 <BarChart
                     data={chartData}
                     layout="vertical"
                     margin={{ top: 10, right: 30, left: 10, bottom: 5 }}
                 >
-                    {/* Hide the X-axis line/numbers for a cleaner look */}
                     <XAxis type="number" hide />
                     
-                    {/* YAxis displays "5 star", "4 star", etc. */}
                     <YAxis 
                         dataKey="name" 
                         type="category" 
@@ -53,12 +46,10 @@ const ReviewChart = ({ ratings }) => {
                     
                     <Tooltip content={<CustomTooltip />} cursor={{ fill: 'transparent' }} />
                     
-                    {/* The actual bars. Added a nice radius to the edges */}
                     <Bar dataKey="count" radius={[0, 4, 4, 0]} barSize={25}>
                         {chartData.map((entry, index) => (
                             <Cell 
                                 key={`cell-${index}`} 
-                                // Make the 5-star bar your brand color, and others a lighter purple/gray
                                 fill={entry.name === '5 star' ? '#ff8811' : '#ff8811'} 
                             />
                         ))}
