@@ -17,17 +17,17 @@ const NavBar = () => {
                     <ul
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-40 p-5 shadow">
-                        <NavLink><span className="md:btn">Home</span></NavLink>
-                        <NavLink><span className="md:btn">Apps</span></NavLink>
-                        <NavLink><span className="md:btn">Installation</span></NavLink>
+                        <NavLink to="/"><span className="md:btn">Home</span></NavLink>
+                        <NavLink to="/apps"><span className="md:btn">Apps</span></NavLink>
+                        <NavLink to="/installation"><span className="md:btn">Installation</span></NavLink>
                     </ul>
                 </div>
-                <div className="flex justify-center items-center gap-2">
+                <NavLink to="/" className="flex justify-center items-center gap-2">
                     <img className="w-10" src={herologo} alt="Hero IO" />
                     <a className="text-xl md:text-3xl font-extrabold bg-gradient-to-r from-[#6b35e5] to-purple-400 bg-clip-text text-transparent cursor-pointer">
                         Hero IO
                     </a>
-                </div>
+                </NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 flex gap-10 font-medium text-lg">
@@ -37,7 +37,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end md:flex md:gap-2">
-                <button className="btn bg-green-400 text-white bg-gradient-to-r from-[#6b35e5] to-purple-400"><FaGithub />Sign In</button>
+                <a className="btn bg-green-400 text-white bg-gradient-to-r from-[#6b35e5] to-purple-400" href="https://github.com/webdiv-rakib" target="_blank"><FaGithub />Sign In</a>
             </div>
         </div>
     );
