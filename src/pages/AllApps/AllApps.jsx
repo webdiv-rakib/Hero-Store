@@ -1,16 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useNavigate } from 'react-router';
 import AppsLists from '../AppsLists/AppsLists';
 import appError from '../../assets/App-Error.png'
+import { InfinitySpin } from 'react-loader-spinner';
 
 const AllApps = () => {
     const appData = useLoaderData();
     const [searchTerm, setSearchTerm] = useState("");
+    const [isSearching, setIsSearching] = useState(false);
 
     const navigate = useNavigate();
     const handleGoBack = () => {
         navigate(-1);
     }
+
+    useEffect(() => {
+        setIsSearching(true); // Turn spinner on
+
+        const delayDebounceFn = setTimeout(() => {
+            setIsSearching(false); // Turn spinner off after 2 seconds
+        }, 2000);
+
+        return () => clearTimeout(delayDebounceFn);
+    }, [searchTerm]);
 
     // 3. Filter the apps based on the search term (case-insensitive)
     const filteredApps = appData.filter(app =>
@@ -51,7 +63,11 @@ const AllApps = () => {
                 </div>
             </div>
             {/* 5. Conditional Rendering: Show grid OR "Not Found" message */}
-            {filteredApps.length > 0 ? (
+            {isSearching ? (
+                <div className="flex justify-center items-center mt-20 mb-20 md:pb-10">
+                    <InfinitySpin width="200" color="#6b35e5" />
+                </div>
+            ) : filteredApps.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center items-center gap-5 md:pb-10 md:pt-10 pt-5 pb-5 px-5 md:px-20">
                     {
                         filteredApps.map(app => <AppsLists key={app.id} app={app}></AppsLists>)
@@ -59,12 +75,11 @@ const AllApps = () => {
                 </div>
             ) : (
                 <div className="flex flex-col items-center justify-center mt-20 space-y-4 md:pb-10 px-5">
-                    <img src={appError} alt="" />
-                    <h2 className="text-3xl font-bold text-gray-400 mt-5">OPPS! APP NOT Found</h2>
+                    <img src={appError} alt="Not Found" className="w-64" />
+                    <h2 className="text-3xl font-bold text-gray-400 mt-5">OOPS! APP NOT FOUND</h2>
                     <p className="text-gray-500">Try searching for a different keyword.</p>
                 </div>
-                // tooo lazy to anything today.
-                // will start tomorrow.
+                // Get some rest! You earned it.
             )}
             <div className='text-center md:pb-10 pb-5 mt-5'>
                 <button onClick={handleGoBack} className="btn bg-linear-to-r from-[#6b35e5] to-purple-500 text-white">Go Back</button>
