@@ -24,7 +24,7 @@ const NavBar = () => {
                 </div>
                 <NavLink to="/" className="flex justify-center items-center gap-2">
                     <img className="w-10" src={herologo} alt="Hero IO" />
-                    <a className="text-xl md:text-3xl font-extrabold bg-gradient-to-r from-[#6b35e5] to-purple-400 bg-clip-text text-transparent cursor-pointer">
+                    <a className="text-xl md:text-3xl font-extrabold bg-linear-to-r from-[#6b35e5] to-purple-500 bg-clip-text text-transparent cursor-pointer">
                         Hero Store
                     </a>
                 </NavLink>
@@ -37,7 +37,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end md:flex md:gap-2">
-                <a className="btn bg-green-400 text-white bg-gradient-to-r from-[#6b35e5] to-purple-400" href="https://github.com/webdiv-rakib" target="_blank"><FaGithub />Sign In</a>
+                <a className="btn bg-green-400 text-white bg-linear-to-r from-[#6b35e5] to-purple-500" href="https://github.com/webdiv-rakib" target="_blank"><FaGithub />Sign In</a>
             </div>
         </div>
     );
