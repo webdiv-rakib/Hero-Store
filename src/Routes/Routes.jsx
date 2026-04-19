@@ -7,8 +7,8 @@ import AppDetails from "../pages/AppDetails/AppDetails";
 import Installation from "../pages/Installation/Installation";
 
 const delayFetch = async () => {
-  await new Promise(resolve => setTimeout(resolve, 1000)); // Waits 1 second
-  return fetch('/appData.json'); // Then fetches the data
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  return fetch('/appData.json');
 };
 
 export const router = createBrowserRouter([

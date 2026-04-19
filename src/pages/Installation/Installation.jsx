@@ -7,38 +7,27 @@ const Installation = () => {
     const [installedApps, setInstalledApps] = useState([]);
     const [sortOrder, setSortOrder] = useState("");
 
-    // 1. Load installed apps from localStorage on component mount
     useEffect(() => {
-        // Retrieve the array of installed IDs (e.g., [1, 5, 12])
         const storedIds = JSON.parse(localStorage.getItem('installedApps')) || [];
-
-        // Filter the full app data to only show installed apps
         const myApps = appData.filter(app => storedIds.includes(app.id));
         setInstalledApps(myApps);
     }, [appData]);
 
-    // 2. Handle Uninstall Functionality
     const handleUninstall = (id) => {
-        // Remove from UI state
         const updatedApps = installedApps.filter(app => app.id !== id);
         setInstalledApps(updatedApps);
 
-        // Remove from localStorage
         const storedIds = JSON.parse(localStorage.getItem('installedApps')) || [];
         const updatedIds = storedIds.filter(storedId => storedId !== id);
         localStorage.setItem('installedApps', JSON.stringify(updatedIds));
 
-        // Trigger Toast (Replace alert with your Toast library)
         toast.info("App uninstalled successfully.");
-        // toast.success("App uninstalled successfully!");
     };
 
-    // 3. Handle Sorting Logic
     const handleSort = (e) => {
         const order = e.target.value;
         setSortOrder(order);
 
-        // Create a copy of the array before sorting
         const sortedApps = [...installedApps];
 
         if (order === "high-low") {
@@ -50,7 +39,6 @@ const Installation = () => {
         setInstalledApps(sortedApps);
     };
 
-    // Helper to format download numbers cleanly
     const formatDownloads = (num) => {
         return new Intl.NumberFormat('en-US', { notation: "compact", maximumFractionDigits: 1 }).format(num);
     };
@@ -62,7 +50,6 @@ const Installation = () => {
                 <p className='mt-3 md:mt-5 text-gray-500'>Manage your downloaded applications here.</p>
             </div>
 
-            {/* Sort Dropdown */}
             {installedApps.length > 0 && (
                 <div className="flex md:justify-end mt-10 mb-5 justify-center">
                     <select
@@ -77,7 +64,6 @@ const Installation = () => {
                 </div>
             )}
 
-            {/* Apps Grid or Empty State */}
             {installedApps.length > 0 ? (
                 <div className="mt-5 flex flex-col gap-5">
                     {installedApps.map(app => (
