@@ -58,15 +58,15 @@ const AllApps = () => {
                     }
                 </div>
             ) : (
-                <div className="flex flex-col items-center justify-center mt-20 space-y-4 md:pb-10">
+                <div className="flex flex-col items-center justify-center mt-20 space-y-4 md:pb-10 px-5">
                     <img src={appError} alt="" />
-                    <h2 className="text-3xl font-bold text-gray-400">OPPS! APP NOT Found</h2>
+                    <h2 className="text-3xl font-bold text-gray-400 mt-5">OPPS! APP NOT Found</h2>
                     <p className="text-gray-500">Try searching for a different keyword.</p>
                 </div>
                 // tooo lazy to anything today.
                 // will start tomorrow.
             )}
-            <div className='text-center md:pb-10 pb-5'>
+            <div className='text-center md:pb-10 pb-5 mt-5'>
                 <button onClick={handleGoBack} className="btn bg-linear-to-r from-[#6b35e5] to-purple-500 text-white">Go Back</button>
             </div>
         </div>

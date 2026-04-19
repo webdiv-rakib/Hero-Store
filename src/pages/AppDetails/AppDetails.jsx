@@ -68,7 +68,7 @@ const AppDetails = () => {
                     <button
                         onClick={handleInstall}
                         disabled={isInstalled}
-                        className={`btn w-full md:w-auto px-10 border-none text-white ${isInstalled ? "bg-gray-400 cursor-not-allowed" : "bg-green-500 hover:bg-green-600"
+                        className={`mt-5 mb-5 btn w-max md:w-auto px-10 border-none text-white ${isInstalled ? "bg-gray-400 cursor-not-allowed" : "bg-green-500 hover:bg-green-600"
                             }`}
                     >
                         {isInstalled ? "Installed" : `Install Now (${size}MB)`}
