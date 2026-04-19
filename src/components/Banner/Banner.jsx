@@ -8,8 +8,8 @@ const Banner = () => {
                 <p className='text-xl text-gray-500'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             </div>
             <div className='flex gap-5 justify-center items-center'>
-                <button className='btn'><img className='w-10' src="https://img.icons8.com/?size=100&id=L1ws9zn2uD01&format=png&color=000000" alt="" />Google Play</button>
-                <button className='btn'><img className='w-10' src="https://img.icons8.com/?size=100&id=4PbFeZOKAc61&format=png&color=000000" alt="" />App Store</button>
+                <a className='btn' href='https://play.google.com/store/games?hl=en' target='_blank'><img className='w-10' src="https://img.icons8.com/?size=100&id=L1ws9zn2uD01&format=png&color=000000" alt="" />Google Play</a>
+                <a className='btn' href='https://www.apple.com/app-store/' target='_blank'><img className='w-10' src="https://img.icons8.com/?size=100&id=4PbFeZOKAc61&format=png&color=000000" alt="" />App Store</a>
             </div>
             <div className='flex items-center justify-center'>
                 <img src={heroimg} alt="" />
