@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SingleApp = () => {
     return (
         <Link to={`/appDetails/${id}`}>

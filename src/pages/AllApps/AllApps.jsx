@@ -15,16 +15,15 @@ const AllApps = () => {
     }
 
     useEffect(() => {
-        setIsSearching(true); // Turn spinner on
+        setIsSearching(true);
 
         const delayDebounceFn = setTimeout(() => {
-            setIsSearching(false); // Turn spinner off after 2 seconds
+            setIsSearching(false);
         }, 2000);
 
         return () => clearTimeout(delayDebounceFn);
     }, [searchTerm]);
 
-    // 3. Filter the apps based on the search term (case-insensitive)
     const filteredApps = appData.filter(app =>
         app.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -36,7 +35,6 @@ const AllApps = () => {
             </div>
             <div className='md:flex md:items-center md:justify-between md:flex-row md:px-20 flex flex-col justify-center items-center pt-3'>
                 <div className='text-2xl font-bold hidden md:block'>
-                    {/* Update the count to reflect filtered results */}
                     <h1>({filteredApps.length}) Apps Found</h1>
                 </div>
                 <div>
@@ -62,7 +60,7 @@ const AllApps = () => {
                     </label>
                 </div>
             </div>
-            {/* 5. Conditional Rendering: Show grid OR "Not Found" message */}
+            
             {isSearching ? (
                 <div className="flex justify-center items-center mt-20 mb-20 md:pb-10">
                     <InfinitySpin width="200" color="#6b35e5" />
@@ -79,7 +77,7 @@ const AllApps = () => {
                     <h2 className="text-3xl font-bold text-gray-400 mt-5">OOPS! APP NOT FOUND</h2>
                     <p className="text-gray-500">Try searching for a different keyword.</p>
                 </div>
-                // Get some rest! You earned it.
+                
             )}
             <div className='text-center md:pb-10 pb-5 mt-5'>
                 <button onClick={handleGoBack} className="btn bg-linear-to-r from-[#6b35e5] to-purple-500 text-white">Go Back</button>

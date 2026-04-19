@@ -14,11 +14,11 @@ const Root = () => {
 
             <main className="min-h-[calc(100vh-200px)]">
                 {isNavigating ? (
-                    // 👇 2. Centered InfinitySpin
+                    
                     <div className="flex justify-center items-center h-full mt-32">
                         <InfinitySpin
                             width="200"
-                            color="#6b35e5" // Your Hero IO purple color
+                            color="#6b35e5"
                         />
                     </div>
                 ) : (

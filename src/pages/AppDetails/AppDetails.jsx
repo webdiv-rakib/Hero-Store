@@ -77,13 +77,12 @@ const AppDetails = () => {
                 </div>
             </div>
             <hr />
-            {/* Bottom Section: Recharts */}
+            
             <div className="pt-15 pb-15 md:px-20 px-5">
                 <h2 className="text-3xl font-bold mb-10">Ratings & Reviews ({reviews})</h2>
 
-                {/* Just pass the ratings array from your destructured app object! */}
                 <ReviewChart ratings={ratings}></ReviewChart>
-                {/* <ReviewChart ratings={ratings} /> */}
+                
             </div>
             <hr />
             <div className="pt-15 pb-15 md:px-20 space-y-3 px-5">
