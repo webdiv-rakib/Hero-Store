@@ -1,8 +1,8 @@
-# 🦸‍♂️ Hero IO — Modern App Store Simulation
+# 🦸‍♂️ Hero Store — Modern App Store Simulation
 
 **Hero IO** is a fully responsive, front-end web application that simulates a modern App Store experience. Users can browse a curated list of applications, search for specific apps, view detailed analytics including review charts, and manage their personal app installations using local browser storage.
 
-🌍 **Live Demo:** [Insert Your Deployment Link Here]
+🌍 **Live Demo:** [https://hero-store-bd.vercel.app/]
 
 ---
 
