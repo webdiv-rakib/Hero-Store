@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
-import { useLoaderData } from 'react-router';
+import { useLoaderData, useNavigate } from 'react-router';
 import AppsLists from '../AppsLists/AppsLists';
+import appError from '../../assets/App-Error.png'
 
 const AllApps = () => {
     const appData = useLoaderData();
     const [searchTerm, setSearchTerm] = useState("");
+
+    const navigate = useNavigate();
+    const handleGoBack = () => {
+        navigate(-1);
+    }
 
     // 3. Filter the apps based on the search term (case-insensitive)
     const filteredApps = appData.filter(app =>
@@ -12,12 +18,12 @@ const AllApps = () => {
     );
     return (
         <div>
-            <div className='text-center md:pt-20'>
+            <div className='text-center md:pt-20 pt-5'>
                 <h1 className='text-4xl font-extrabold'>Our All Applications</h1>
                 <p className='md:mt-5 text-gray-500'>Explore All Apps on the Market developed by us. We code for Millions</p>
             </div>
-            <div className='flex items-center justify-between md:px-20'>
-                <div className='text-2xl font-bold'>
+            <div className='md:flex md:items-center md:justify-between md:flex-row md:px-20 flex flex-col justify-center items-center pt-3'>
+                <div className='text-2xl font-bold hidden md:block'>
                     {/* Update the count to reflect filtered results */}
                     <h1>({filteredApps.length}) Apps Found</h1>
                 </div>
@@ -53,12 +59,16 @@ const AllApps = () => {
                 </div>
             ) : (
                 <div className="flex flex-col items-center justify-center mt-20 space-y-4 md:pb-10">
-                    <h2 className="text-3xl font-bold text-gray-400">No App Found</h2>
+                    <img src={appError} alt="" />
+                    <h2 className="text-3xl font-bold text-gray-400">OPPS! APP NOT Found</h2>
                     <p className="text-gray-500">Try searching for a different keyword.</p>
                 </div>
                 // tooo lazy to anything today.
                 // will start tomorrow.
             )}
+            <div className='text-center md:pb-10 pb-5'>
+                <button onClick={handleGoBack} className="btn bg-linear-to-r from-[#6b35e5] to-purple-500 text-white">Go Back</button>
+            </div>
         </div>
     );
 };
