@@ -91,7 +91,7 @@ const AppDetails = () => {
                 <p>{description}</p>
             </div>
             <div className="text-center pb-10">
-                <button onClick={handleGoBack} className="btn bg-gradient-to-r from-[#6b35e5] to-purple-400 text-white">Go Back</button>
+                <button onClick={handleGoBack} className="btn bg-linear-to-r from-[#6b35e5] to-purple-400 text-white">Go Back</button>
             </div>
         </div>
     );

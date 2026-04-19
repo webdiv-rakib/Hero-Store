@@ -22,7 +22,7 @@ const AppsStore = ({ appData }) => {
             </div>
             <div className="text-center md:pb-10 pb-5">
                 <Link to="/apps">
-                    <button className="btn text-white bg-gradient-to-r from-[#6b35e5] to-purple-400">Show All</button>
+                    <button className="btn text-white bg-linear-to-r from-[#6b35e5] to-purple-400">Show All</button>
                 </Link>
             </div>
         </div>
