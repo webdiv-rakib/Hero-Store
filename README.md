@@ -33,6 +33,23 @@ This project was built using the following modern web technologies:
 * **Icons:** React Icons
 
 ---
+## 📂 Data Architecture
+{
+  "id": 1,
+  "title": "CodeCraft Mobile",
+  "companyName": "DevStudio Pro",
+  "image": "[https://picsum.photos/](https://picsum.photos/)...",
+  "description": "App description here...",
+  "size": 45.2,
+  "reviews": 12450,
+  "ratingAvg": 4.8,
+  "downloads": 1500000,
+  "ratings": [
+    { "name": "1 star", "count": 250 },
+    { "name": "2 star", "count": 100 },
+    ...
+  ]
+}
 
 ## 🚀 Getting Started (Local Development)
 
@@ -42,3 +59,5 @@ To run this project locally on your machine, follow these steps:
 ```bash
 git clone [https://github.com/your-username/hero-io.git](https://github.com/your-username/hero-io.git)
 cd hero-io
+npm install
+npm run dev
