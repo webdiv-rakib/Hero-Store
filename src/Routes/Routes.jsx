@@ -4,6 +4,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
 import AllApps from "../pages/AllApps/AllApps";
 import AppDetails from "../pages/AppDetails/AppDetails";
+import Installation from "../pages/Installation/Installation";
 
 export const router = createBrowserRouter([
   {
@@ -11,26 +12,31 @@ export const router = createBrowserRouter([
     Component: Root,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
-    {
-      index: true,
-      path: "/",
-      loader: () => fetch('appData.json'),
-      Component: Home
-    },
-    {
-      path: "/apps",
-      loader: () => fetch('appData.json'),
-      Component: AllApps,
-    },
-    {
-      path: "/appDetails/:id",
-      loader: () => fetch('appData.json'),
-      Component: AppDetails
-    },
-    {
-      path: "*",
-      element: <ErrorPage />,
-    },
+      {
+        index: true,
+        path: "/",
+        loader: () => fetch('appData.json'),
+        Component: Home
+      },
+      {
+        path: "/apps",
+        loader: () => fetch('appData.json'),
+        Component: AllApps,
+      },
+      {
+        path: "/appDetails/:id",
+        loader: () => fetch('appData.json'),
+        Component: AppDetails
+      },
+      {
+        path: "/installation",
+        loader: () => fetch('appData.json'),
+        Component: Installation,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
+      },
     ]
   },
 ]);

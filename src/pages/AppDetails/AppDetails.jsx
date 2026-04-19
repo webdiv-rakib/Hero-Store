@@ -1,11 +1,31 @@
 import { useLoaderData, useNavigate, useParams } from "react-router";
 import ReviewChart from "../../components/ReviewChart/ReviewChart";
+import { useEffect, useState } from "react";
 
 const AppDetails = () => {
     const { id } = useParams();
     const appId = parseInt(id);
     const appData = useLoaderData();
     const singleApp = appData.find(app => app.id === appId);
+    const [isInstalled, setIsInstalled] = useState(false);
+
+    useEffect(() => {
+        const storedIds = JSON.parse(localStorage.getItem('installedApps')) || [];
+        if (storedIds.includes(appId)) {
+            setIsInstalled(true);
+        }
+    }, [appId]);
+
+    const handleInstall = () => {
+        const storedIds = JSON.parse(localStorage.getItem('installedApps')) || [];
+
+        if (!storedIds.includes(appId)) {
+            storedIds.push(appId);
+            localStorage.setItem('installedApps', JSON.stringify(storedIds));
+            setIsInstalled(true);
+            alert("App installed successfully!"); // Replace with Toast success
+        }
+    };
 
     const formatDownloads = (num) => {
         return new Intl.NumberFormat('en-US', {
@@ -28,7 +48,7 @@ const AppDetails = () => {
                 <div className="px-5">
                     <div className="space-y-3 mt-5">
                         <p className="text-2xl font-bold">{title}</p>
-                        <p className="text-gray-500">Developed By <span className="text-[#6f36e7]">{companyName}</span></p>
+                        <p className="text-gray-500">Developed By <span className="text-[#6f36e7] font-bold">{companyName}</span></p>
                     </div>
                     <hr className="mt-5" />
                     <div className="flex items-center justify-center gap-20 mt-5 text-center">
@@ -45,9 +65,14 @@ const AppDetails = () => {
                             <p className="text-3xl font-extrabold">{formatDownloads(reviews)}</p>
                         </div>
                     </div>
-                    <div className="mt-5 text-center md:text-left pb-5">
-                        <button className="btn bg-green-500 text-white">Install Now ({size}MB)</button>
-                    </div>
+                    <button
+                        onClick={handleInstall}
+                        disabled={isInstalled}
+                        className={`btn w-full md:w-auto px-10 border-none text-white ${isInstalled ? "bg-gray-400 cursor-not-allowed" : "bg-green-500 hover:bg-green-600"
+                            }`}
+                    >
+                        {isInstalled ? "Installed" : `Install Now (${size}MB)`}
+                    </button>
                 </div>
             </div>
             <hr />
